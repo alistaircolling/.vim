@@ -73,13 +73,3 @@ These are commands I find myself using 90% of the time.
 `y`               Yank text
 
 `d`               Cut
-
-### Misc
-
-`:nohls`          Unhighlight search terms
-
-`:Strip`          Strip all trailing whitespace
-
-`:retab`          Change tabs in file to current settings
-
-`:gc`             Comment out in Visual mode
