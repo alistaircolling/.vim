@@ -1,3 +1,18 @@
+## Get the config
+
+    cd ~
+    git clone https://github.com/karlfreeman/.vim.git ~/.vim
+    cd ~/.vim
+    sh install.sh
+
+## Plugins
+
+These are the plugins I use:
+
+* [ctrlp.vim](https://github.com/kien/ctrlp.vim)
+* [lightline.vim](https://github.com/itchyny/lightline.vim)
+* [syntastic](https://github.com/scrooloose/syntastic)
+
 ## Commands
 
 These are commands I find myself using 90% of the time.
