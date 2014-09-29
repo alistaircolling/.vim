@@ -1,9 +1,8 @@
 ## Get the config
 
-    cd ~
-    git clone https://github.com/karlfreeman/.vim.git ~/.vim
-    cd ~/.vim
-    sh install.sh
+```bash
+cd ~ && git clone https://github.com/karlfreeman/.vim.git && ~/.vim && sh install.sh
+```
 
 ## Plugins
 
