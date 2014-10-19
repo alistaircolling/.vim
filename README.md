@@ -1,4 +1,4 @@
-# `$ vi`
+# `$ vim`
 
 ## Get the config
 
