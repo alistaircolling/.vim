@@ -8,7 +8,8 @@ filetype plugin indent on          " Enable file type detection
 " set term=xterm-256color          " Set the correct term
 " set t_Co=256                     " Force vim to use 256 colours
 
-set autoindent
+set autoindent                     "
+set autowrite                      " Automatically :write before running commands
 set cursorline                     " Highlight the current line
 set encoding=utf-8                 " Use UTF-8 internally
 set expandtab                      " Tabs are spaces
@@ -16,7 +17,7 @@ set fileencoding=utf-8             " The encoding written to file
 set fileformat=unix                " That LF life, son
 set hlsearch                       " Highlight searches
 set ignorecase                     " Ignore case when searching
-set incsearch                      " start searching when you type the first character of the search string
+set incsearch                      " Start searching when you type the first character of the search string
 set laststatus=2                   " Always show the status line, also needed for powerline
 set list                           " Displays whitespace
 set listchars=eol:¬                " Set end of line character
@@ -24,6 +25,7 @@ set noerrorbells                   " Silence!
 set nomodeline                     " This option will simply turn off modeline parsing altogether
 set number                         " Show line numbers all of the times
 set scrolloff=3                    " More space around cursor when scrolling
+set showcmd                        " Display incomplete commands
 set shiftwidth=2                   " Control how many columns text is indented with the reindent operations
 set smartcase                      " Pay attention if you put caps in your search term
 set softtabstop=2                  " Control how many columns vim uses when you hit tab in insert mode
