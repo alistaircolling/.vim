@@ -5,8 +5,8 @@ execute pathogen#infect()
 syntax on                          " Turn on vim's syntax highlighting
 filetype plugin indent on          " Enable file type detection
 
-" set term=xterm-256color          " Set the correct term
-" set t_Co=256                     " Force vim to use 256 colours
+set term=xterm-256color          " Set the correct term
+set t_Co=256                     " Force vim to use 256 colours
 
 set autoindent                     "
 set autowrite                      " Automatically :write before running commands
@@ -54,6 +54,10 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
 
 " ctrlp
 let g:ctrlp_custom_ignore = {
