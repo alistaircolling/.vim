@@ -47,6 +47,12 @@ set directory=~/.vim/backup/      " Move swp files to /backup/
 " mappings
 :map Q <Nop>
 
+" Get off my lawn
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+
 " ctrlp
 let g:ctrlp_custom_ignore = {
  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
