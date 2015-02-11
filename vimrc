@@ -49,12 +49,6 @@ set directory=~/.vim/backup/      " Move swp files to /backup/
 " mappings
 :map Q <Nop>
 
-" Get off my lawn
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
-
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
