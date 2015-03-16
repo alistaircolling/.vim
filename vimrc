@@ -8,6 +8,7 @@ filetype plugin indent on          " Enable file type detection
 set term=xterm-256color            " Set the correct term
 set t_Co=256                       " Force vim to use 256 colours
 
+set autoread                       "
 set autoindent                     "
 set autowrite                      " Automatically :write before running commands
 set cursorline                     " Highlight the current line
