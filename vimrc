@@ -1,4 +1,6 @@
-set nocompatible                   " This option stops vim from behaving in a strongly vi -compatible way
+autocmd!
+set nocompatible
+set noshowmode
 
 execute pathogen#infect()
 
