@@ -38,6 +38,10 @@ set wildignore+=*\vendor\*,*\tmp\* " Let's allways ignore vendor and tmp
 set relativenumber                 " Less arithmetic to navigate around (relative line numbers)
 set number                         " 
 
+set ttyfast                        "
+set ttyscroll=3                    "
+set lazyredraw                     "
+
 set backupdir=~/.vim/backup/      " Move backup files to /backup/
 set directory=~/.vim/backup/      " Move swp files to /backup/
 
