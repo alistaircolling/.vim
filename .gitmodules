@@ -22,3 +22,6 @@
 [submodule "bundle/closetag"]
 	path = bundle/closetag
 	url = git://github.com/docunext/closetag.vim.git
+[submodule "bundle/lightline-hybrid.vim"]
+	path = bundle/lightline-hybrid.vim
+	url = git@github.com:cocopon/lightline-hybrid.vim.git

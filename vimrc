@@ -14,6 +14,7 @@ set term=xterm-256color            " Set the correct term
 set t_Co=256                       " Force vim to use 256 colours
 set autowrite                      " Automatically :write before running commands
 set cursorline                     " Highlight the current line
+set backspace=2                    " Backspace deletes like most programs in insert mode
 set encoding=utf-8                 " Use UTF-8 internally
 set expandtab                      " Tabs are spaces
 set fileencoding=utf-8             " The encoding written to file
@@ -67,4 +68,10 @@ let g:ctrlp_custom_ignore = {
  \ 'dir':  'dist\|bower_components\|node_modules\|v[\/]\.(git|hg|svn)$',
  \ }
 
-colorscheme hybrid                " Use the `hybrid` colourscheme
+" Use the `hybrid` colourscheme
+let g:lightline = {}
+let g:lightline.colorscheme = 'hybrid'
+
+" Use the `hybrid` colourscheme
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
