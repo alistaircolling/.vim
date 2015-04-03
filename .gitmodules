@@ -25,3 +25,6 @@
 [submodule "bundle/lightline-hybrid.vim"]
 	path = bundle/lightline-hybrid.vim
 	url = git@github.com:cocopon/lightline-hybrid.vim.git
+[submodule "bundle/vim-elixir"]
+	path = bundle/vim-elixir
+	url = git@github.com:elixir-lang/vim-elixir.git
