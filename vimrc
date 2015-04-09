@@ -74,5 +74,4 @@ let g:lightline = {}
 let g:lightline.colorscheme = 'hybrid'
 
 " Use the `hybrid` colourscheme
-let g:hybrid_use_Xresources = 1
 colorscheme hybrid
