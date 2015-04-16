@@ -44,6 +44,7 @@ set relativenumber                 " Less arithmetic to navigate around (relativ
 set number                         " Show me the money
 set backupdir=~/.vim/backup/       " Move backup files to /backup/
 set directory=~/.vim/backup/       " Move swp files to /backup/
+set clipboard=unnamed              "
 
 " Increase scroll speed
 set ttyfast
@@ -69,9 +70,9 @@ let g:ctrlp_custom_ignore = {
  \ 'dir':  'dist\|bower_components\|node_modules\|v[\/]\.(git|hg|svn)$',
  \ }
 
-" Use the `hybrid` colourscheme
+" Use the `solarized` colourscheme
 let g:lightline = {}
-let g:lightline.colorscheme = 'hybrid'
-
-" Use the `hybrid` colourscheme
-colorscheme hybrid
+let g:lightline.colorscheme = 'solarized'
+syntax enable
+set background=dark
+colorscheme solarized
