@@ -55,17 +55,17 @@ set lazyredraw
 set splitbelow
 set splitright
 
-" commands
+" Commands
 :command WQ wq
 :command Wq wq
 :command W w
 :command Q q
 :command Strip %s/\s\+$//         " `:Strip` will kill errant whitespace
 
-" mappings
+" Mappings
 :map Q <Nop>
 
-" ctrlp
+" Ctrl-P
 let g:ctrlp_custom_ignore = {
  \ 'dir':  'dist\|bower_components\|node_modules\|v[\/]\.(git|hg|svn)$',
  \ }
