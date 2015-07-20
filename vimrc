@@ -64,6 +64,7 @@ set splitright
 
 " Mappings
 :map Q <Nop>
+:map <C-n> :NERDTreeToggle<CR>
 
 " Ctrl-P
 let g:ctrlp_custom_ignore = {
@@ -76,3 +77,6 @@ let g:lightline.colorscheme = 'solarized'
 syntax enable
 set background=dark
 colorscheme solarized
+
+" NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
