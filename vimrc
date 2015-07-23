@@ -1,12 +1,30 @@
-autocmd!
-set nocompatible
-set noshowmode
+if 0 | endif
+if has('vim_starting')
+ if &compatible
+   set nocompatible
+ endif
+ set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
-execute pathogen#infect()
-execute pathogen#helptags()
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'shougo/neobundle.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'mustache/vim-mustache-handlebars'
+NeoBundle 'myusuf3/numbers.vim'
+NeoBundle 'townk/vim-autoclose'
+NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'edsono/vim-matchit'
+call neobundle#end()
 
-syntax on                          " Turn on vim's syntax highlighting
-filetype plugin indent on          " Enable file type detection
+syntax on
+filetype plugin indent on
+
+NeoBundleCheck
 
 set autoread                       "
 set autoindent                     "
@@ -71,12 +89,30 @@ let g:ctrlp_custom_ignore = {
  \ 'dir':  'dist\|bower_components\|node_modules\|v[\/]\.(git|hg|svn)$',
  \ }
 
-" Use the `solarized` colourscheme
-let g:lightline = {}
-let g:lightline.colorscheme = 'solarized'
-syntax enable
-set background=dark
-colorscheme solarized
-
 " NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Use the `solarized` colourscheme
+" let g:lightline = {}
+" let g:lightline.colorscheme = 'solarized'
+syntax enable
+
+set background=dark
+colorscheme base16-railscasts
+
+highlight clear SignColumn
+highlight VertSplit    ctermbg=236
+highlight ColorColumn  ctermbg=237
+highlight LineNr       ctermbg=236 ctermfg=240
+highlight CursorLineNr ctermbg=236 ctermfg=240
+highlight CursorLine   ctermbg=236
+highlight StatusLineNC ctermbg=238 ctermfg=0
+highlight StatusLine   ctermbg=240 ctermfg=12
+highlight IncSearch    ctermbg=3   ctermfg=1
+highlight Search       ctermbg=1   ctermfg=3
+highlight Visual       ctermbg=3   ctermfg=0
+highlight Pmenu        ctermbg=240 ctermfg=12
+highlight PmenuSel     ctermbg=3   ctermfg=1
+highlight SpellBad     ctermbg=0   ctermfg=1
+
+
