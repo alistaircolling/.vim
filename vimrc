@@ -26,6 +26,14 @@ filetype plugin indent on
 
 NeoBundleCheck
 
+" Ctrl-P
+let g:ctrlp_custom_ignore = {
+ \ 'dir':  'dist\|bower_components\|node_modules\|v[\/]\.(git|hg|svn)$',
+ \ }
+
+" NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 set autoread                       "
 set autoindent                     "
 set autowrite                      " Automatically :write before running commands
@@ -78,28 +86,15 @@ set splitright
 :command Wq wq
 :command W w
 :command Q q
-:command Strip %s/\s\+$//         " `:Strip` will kill errant whitespace
+:command Strip %s/\s\+$//
 
 " Mappings
 :map Q <Nop>
 :map <C-n> :NERDTreeToggle<CR>
 
-" Ctrl-P
-let g:ctrlp_custom_ignore = {
- \ 'dir':  'dist\|bower_components\|node_modules\|v[\/]\.(git|hg|svn)$',
- \ }
-
-" NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-" Use the `solarized` colourscheme
-" let g:lightline = {}
-" let g:lightline.colorscheme = 'solarized'
-syntax enable
-
+" Theme
 set background=dark
 colorscheme base16-railscasts
-
 highlight clear SignColumn
 highlight VertSplit    ctermbg=236
 highlight ColorColumn  ctermbg=237
@@ -114,5 +109,3 @@ highlight Visual       ctermbg=3   ctermfg=0
 highlight Pmenu        ctermbg=240 ctermfg=12
 highlight PmenuSel     ctermbg=3   ctermfg=1
 highlight SpellBad     ctermbg=0   ctermfg=1
-
-
