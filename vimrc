@@ -20,6 +20,8 @@ NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'edsono/vim-matchit'
 NeoBundle 'mileszs/ack.vim'
+NeoBundle 'tmux-plugins/vim-tmux-focus-events'
+NeoBundle 'tmux-plugins/vim-tmux'
 call neobundle#end()
 
 syntax on
