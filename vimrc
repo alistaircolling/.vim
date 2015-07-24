@@ -19,6 +19,7 @@ NeoBundle 'townk/vim-autoclose'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'edsono/vim-matchit'
+NeoBundle 'mileszs/ack.vim'
 call neobundle#end()
 
 syntax on
@@ -28,11 +29,14 @@ NeoBundleCheck
 
 " Ctrl-P
 let g:ctrlp_custom_ignore = {
- \ 'dir':  'dist\|bower_components\|node_modules\|v[\/]\.(git|hg|svn)$',
+ \ 'dir':  'vendor\|dist\|bower_components\|node_modules\|v[\/]\.(git|hg|svn)$',
  \ }
 
 " NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Silver searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 set autoread                       "
 set autoindent                     "
@@ -71,15 +75,13 @@ set number                         " Show me the money
 set backupdir=~/.vim/backup/       " Move backup files to /backup/
 set directory=~/.vim/backup/       " Move swp files to /backup/
 set clipboard=unnamed              "
-
-" Increase scroll speed
-set ttyfast
-set ttyscroll=3
-set lazyredraw
-
-" Open new split panes to right and bottom, which feels more natural
-set splitbelow
-set splitright
+set mouse=a                        "
+set ttymouse=xterm2                "
+set ttyfast                        "
+set ttyscroll=3                    "
+set lazyredraw                     "
+set splitbelow                     "
+set splitright                     "
 
 " Commands
 :command WQ wq
