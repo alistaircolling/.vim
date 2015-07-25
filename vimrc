@@ -8,20 +8,21 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'shougo/neobundle.vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'scrooloose/syntastic'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'mattn/emmet-vim'
-NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'mustache/vim-mustache-handlebars'
-NeoBundle 'myusuf3/numbers.vim'
-NeoBundle 'townk/vim-autoclose'
-NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'mileszs/ack.vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'edsono/vim-matchit'
-NeoBundle 'mileszs/ack.vim'
-NeoBundle 'tmux-plugins/vim-tmux-focus-events'
+NeoBundle 'townk/vim-autoclose'
+NeoBundle 'myusuf3/numbers.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tmux-plugins/vim-tmux'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'cocopon/lightline-hybrid.vim'
+NeoBundle 'mustache/vim-mustache-handlebars'
+NeoBundle 'tmux-plugins/vim-tmux-focus-events'
 call neobundle#end()
 
 syntax on
